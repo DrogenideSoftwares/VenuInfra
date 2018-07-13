@@ -1,0 +1,56 @@
+@CHARSET "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
+body
+{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(sport.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.simple-form
+{
+    text-align: center;
+    margin: 100px 0px;
+}
+#registration
+{
+    width: 50%;
+    background-color: #051019;
+    opacity:0.5;
+    padding: 50px 0px; 
+    margin-left: 320px;
+}
+#button1
+{
+    outline: 0px;
+    width: 275px;
+    padding: 10px;
+    border-radius: 5px;
+}
+#ph
+{
+    outline: 0px;
+    width: 65px;
+    padding: 10px;
+    border-radius: 5px;
+}
+#phone
+{
+    outline: 0px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+#button
+{
+    outline: 0px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #0c6996;
+    border: 2px solid #01010c;
+    color: aliceblue;
+    font-size: 18px;
+     
+}
