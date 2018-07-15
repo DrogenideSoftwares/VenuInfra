@@ -15,6 +15,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
@@ -90,6 +91,9 @@ public class LoginServlet extends HttpServlet {
 			
 			if(flag==1)
 			{
+				
+				HttpSession session=request.getSession();
+				session.setAttribute("username", u);
 			rd=request.getRequestDispatcher("/superadmin.jsp");
 			rd.forward(request, response);
 //				response.sendRedirect("/superadmin.jsp");
@@ -131,6 +135,8 @@ public class LoginServlet extends HttpServlet {
 			
 			   if(flag==1)
 			    {
+				   HttpSession session=request.getSession();
+					session.setAttribute("username", u);
 			        rd=request.getRequestDispatcher("/Admin1.jsp");
 			        rd.forward(request, response);
 //				    response.sendRedirect("/superadmin.jsp");
@@ -173,6 +179,8 @@ public class LoginServlet extends HttpServlet {
 			
 			if(flag==1)
 			{
+				HttpSession session=request.getSession();
+				session.setAttribute("username", u);
 			rd=request.getRequestDispatcher("/Storemanager.jsp");
 			rd.forward(request, response);
 //				response.sendRedirect("/superadmin.jsp");
@@ -214,6 +222,8 @@ public class LoginServlet extends HttpServlet {
 		
 		   if(flag==1)
 		     {
+			   HttpSession session=request.getSession();
+				session.setAttribute("username", u);
 		      rd=request.getRequestDispatcher("/DeliveryBoy.jsp");
 		      rd.forward(request, response);
 //			  response.sendRedirect("/superadmin.jsp");

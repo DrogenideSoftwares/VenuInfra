@@ -61,11 +61,11 @@ public class Deliveryboyservlet extends HttpServlet {
 			ResultSet rs=st.executeQuery(sql);
 			
 			
-			p.println("<table border><th>Username</th><th>Password</th><th>No of Admin</th>");
+			p.println("<table border><th>Username</th><th>Password</th>");
 			while(rs.next())
 			{
 				p.println("<tr>");
-				p.println("<td>"+rs.getString("demail")+"</td><td>"+rs.getString("dpwd")+"</td><br>");
+				p.println("<td>"+rs.getString("demail")+"</td><br>");
 				p.println("</tr>");
 			}
 			p.println("</table>");
